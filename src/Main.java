@@ -4,6 +4,10 @@ public class Main {
         BmiService service = new BmiService();
         float weight = 53.3f;
         float bmi = service.calculate(weight);
-        System.out.println(bmi);
+        
+        float height = 1f;
+        if (height > 0) {
+            System.out.println("Индекс массы тела " + bmi);
+        }
     }
 }
